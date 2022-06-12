@@ -1,0 +1,11 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "lib",
+    srcs = [
+        "collector_linux.go",
+        "collector_other.go",
+    ],
+    importpath = "github.com/thempatel/test_build/lib",
+    visibility = ["//visibility:public"],
+)
